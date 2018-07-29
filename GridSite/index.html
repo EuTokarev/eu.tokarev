@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Css Grid Real Exemple</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Header CSS (First Sections of Website: paste after release from header.min.css here) -->
+	<style></style>
+
+	<!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+	<script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+
+	<!-- Load CSS Start -->
+	<script>loadLocalStorageCSS( "webfonts", "css/fonts.min.css?ver=1.0.0" );</script>
+	<script>loadCSS( "css/header.min.css?ver=1.0.0", false, "all" );</script>
+	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
+	<!-- Load CSS End -->
+
+	<!-- Load CSS Compiled without JS -->
+	<noscript>
+		<link rel="stylesheet" href="css/fonts.min.css">
+		<link rel="stylesheet" href="css/main.min.css">
+	</noscript>
+
+</head>
+
+<body>
+
+<header class="main-header grid" style="background-image: url(img/0-header.jpg);">
+
+	<div class="header-content grid">
+		<h1>We Are Real Creators</h1>
+		<div class="header-buttons">
+			<a href="#" class="button">Follow</a>
+			<a href="#" class="button button-gray">Go Home</a>
+		</div>
+	</div>
+
+</header>
+
+
+<section class="portfolio-section grid">
+	<div class="portfolio-item grid" style="background-image: url(../img/1.jpg)"><span>Cool Glasses</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/2.jpg)"><span>Cool MacBook</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/3.jpg)"><span>Cool iMac</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/4.jpg)"><span>Cool Hacking</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/5.jpg)"><span>Cool Bull Shit</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/6.jpg)"><span>Cool WorkSpace</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/7.jpg)"><span>Cool Notebook</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/8.jpg)"><span>Cool Code</span></div>
+	<div class="portfolio-item grid" style="background-image: url(../img/9.jpg)"><span>Cool Timer</span></div>
+	<div class="buttoncase text-center"><a href="#" class="button">View Portfolio</a></div>
+</section>
+
+<section class="section-ready landing-section">
+	<div class="container grid">
+
+		<div class="ready-left">
+			<h2>Are You Ready <br> Are You MTHFCKU READY??</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum officiis unde eveniet pariatur repudiandae nisi, deleniti voluptatibus, sequi enim quaerat reiciendis rem aliquid quam, at iste architecto sed ipsam officia!</p>
+			<p>Exercitationem assumenda adipisci cupiditate, nesciunt. Vel blanditiis consectetur sapiente sed placeat facilis cum magni, maiores quia nihil soluta consequatur, quod dignissimos molestiae itaque repellendus quos libero deleniti. Aliquid fugit, accusamus.</p>
+		</div>
+
+		<div class="ready-right">
+			<img src="img/example.jpg" alt="Example" class="img-responsive">
+		</div>
+
+	</div>
+</section>
+
+<section class="form-section">
+	<div class="container">
+
+		<form class="grid">
+			<div><input type="text" name="name" placeholder="You Name..." required></div>
+			<div><input type="text" name="name" placeholder="You Name..."></div>
+			<div><input type="text" name="name" placeholder="You Name..."></div>
+			<div><button class="button">YES! READY!</button></div>
+		</form>
+
+	</div>
+</section>
+
+<section class="landing-section section-blog">
+
+	<div class="container">
+
+		<h2>Ready To Read Our Hell Blog?</h2>
+
+		<div class="blog-home grid">
+
+			<a href="#" class="blog-item grid">
+				<span class="blog-item-img" style="background-image: url(img/1.jpg)"></span>
+				<span class="blog-item-content grid">
+					<h4>We Are Champions At Last Month</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid, dolor, veniam perferendis cumque suscipit assumenda.</p>
+				</span>
+			</a>
+
+			<a href="#" class="blog-item grid">
+				<span class="blog-item-img" style="background-image: url(img/2.jpg)"></span>
+				<span class="blog-item-content grid">
+					<h4>We Are Champions At Last Month</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid, dolor, veniam perferendis cumque suscipit assumenda.</p>
+				</span>
+			</a>
+
+			<a href="#" class="blog-item grid">
+				<span class="blog-item-img" style="background-image: url(img/3.jpg)"></span>
+				<span class="blog-item-content grid">
+					<h4>We Are Champions At Last Month</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid, dolor, veniam perferendis cumque suscipit assumenda.</p>
+				</span>
+			</a>
+
+			<a href="#" class="blog-item grid">
+				<span class="blog-item-img" style="background-image: url(img/4.jpg)"></span>
+				<span class="blog-item-content grid">
+					<h4>We Are Champions At Last Month</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid, dolor, veniam perferendis cumque suscipit assumenda.</p>
+				</span>
+			</a>
+
+			<a href="#" class="blog-item grid">
+				<span class="blog-item-img" style="background-image: url(img/5.jpg)"></span>
+				<span class="blog-item-content grid">
+					<h4>We Are Champions At Last Month</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid, dolor, veniam perferendis cumque suscipit assumenda.</p>
+				</span>
+			</a>
+
+			<a href="#" class="blog-item grid">
+				<span class="blog-item-img" style="background-image: url(img/6.jpg)"></span>
+				<span class="blog-item-content grid">
+					<h4>We Are Champions At Last Month</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia aliquid, dolor, veniam perferendis cumque suscipit assumenda.</p>
+				</span>
+			</a>
+
+<div class="buttoncase text-center"><a href="#" class="button">View Blog</a></div>
+
+		</div>
+
+	</div>
+
+</section>
+
+
+<footer class="main-footer">
+	<div class="container">
+		<div class="footer-logo">
+			Wa Are Real <span>Creators</span>
+		</div>
+		<div class="footer-copy">©</div>
+	</div>
+</footer>
+
+	<!-- Load Scripts Start -->
+	<script>var scr = {"scripts":[
+		{"src" : "js/libs.js", "async" : false},
+		{"src" : "js/common.js", "async" : false}
+		]};!function(t,n,r){"use strict";var c=function(t){if("[object Array]"!==Object.prototype.toString.call(t))return!1;for(var r=0;r<t.length;r++){var c=n.createElement("script"),e=t[r];c.src=e.src,c.async=e.async,n.body.appendChild(c)}return!0};t.addEventListener?t.addEventListener("load",function(){c(r.scripts);},!1):t.attachEvent?t.attachEvent("onload",function(){c(r.scripts)}):t.onload=function(){c(r.scripts)}}(window,document,scr);
+	</script>
+	<!-- Load Scripts End -->
+
+</body>
+</html>
